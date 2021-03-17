@@ -28,7 +28,7 @@ Usuario não existe
 
 *** Keywords ***
 Login with  
-  [Arguments]    ${uname}     ${password}
+  [Arguments]       ${uname}     ${password}
     
    Input Text      css:input[name=username]         ${uname} 
    Input Text      css:input[name=password]         ${password}
