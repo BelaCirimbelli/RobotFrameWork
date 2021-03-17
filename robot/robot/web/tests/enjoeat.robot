@@ -13,5 +13,6 @@ Complete a request
 
 *** Keywords ***
 Go To The Main Page 
-    Go to               ${url}/nice_iframe
-    Click Element       css=a[class='navbar-brand']
+    Go to                                   ${url}/nice_iframe
+    Wait Until Element Is Visible           css=a[class='navbar-brand']         timeout=5
+    Click Element                           css=a[class='navbar-brand']
